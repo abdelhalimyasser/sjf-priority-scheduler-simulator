@@ -79,7 +79,7 @@ The system is structured around the required evaluation rubrics spanning accurat
 ## 🚀 Getting Started
 
 ### Prerequisites
-- **Java Development Kit (JDK):** Version 26 or higher if realesed.
+- **Java Development Kit (JDK):** Version 26 or higher if released.
 - **JavaFX SDK:** Compatible with your JDK version (or managed via Maven/Gradle).
 - **IDE:** IntelliJ IDEA (Recommended), Apache / Oracle Netbeans, Eclipse, VS Code or even Notepad.
 
