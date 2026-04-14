@@ -69,7 +69,7 @@ The system is structured around the required evaluation rubrics spanning accurat
 |-----------------------|--------------------------------------------------------------------|-------------------|
 | Abdelhalim Yasser     | [@abdelhalimyasser](https://github.com/abdelhalimyasser)           | - |
 | Ali Samy              | [@AliSamy12](https://github.com/AliSamy12)                         | - |
-| Abdelullah Nasser     | [@](https://github.com/)   | - |
+| Abdelallah Nasser     | [@abdallahnasser2005](https://github.com/abdallahnasser2005)       | - |
 | Nada Moustafa         | [@qNVDV](https://github.com/qNVDV)                                 | - |
 | Nourhan Mohamed       | [@Nour-FCAI](https://github.com/Nour-FCAI)                         | - |
 | Nessreen Salah        | [@](https://github.com/)                                           | - |
