@@ -21,7 +21,7 @@ The OS Scheduler Simulator is an interactive desktop application designed to eva
 
 | Layer                | Technology / Pattern                                          |
 |----------------------|---------------------------------------------------------------|
-| Language             | Java (JDK 26+)                                                |
+| Language             | Java (JDK 21+)                                                |
 | GUI Framework        | JavaFX                                                        |
 | Architecture         | Clean Architecture (Model-Scheduler-GUI separation)           |
 | Design Patterns      | Strategy (for schedulers), Factory, Observer                  |
@@ -70,16 +70,13 @@ The system is structured around the required evaluation rubrics spanning accurat
 | Abdelhalim Yasser     | [@abdelhalimyasser](https://github.com/abdelhalimyasser)           | - |
 | Ali Samy              | [@AliSamy12](https://github.com/AliSamy12)                         | - |
 | Abdelallah Nasser     | [@abdallahnasser2005](https://github.com/abdallahnasser2005)       | - |
-| Nada Moustafa         | [@qNVDV](https://github.com/qNVDV)                                 | - |
-| Nourhan Mohamed       | [@Nour-FCAI](https://github.com/Nour-FCAI)                         | - |
-| Nessreen Salah        | [@](https://github.com/)                                           | - |
 
 ---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- **Java Development Kit (JDK):** Version 26 or higher if released.
+- **Java Development Kit (JDK):** Version 21 or higher if released.
 - **JavaFX SDK:** Compatible with your JDK version (or managed via Maven/Gradle).
 - **IDE:** IntelliJ IDEA (Recommended), Apache / Oracle Netbeans, Eclipse, VS Code or even Notepad.
 
