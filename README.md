@@ -76,8 +76,10 @@ The repository follows the strict separation of concerns required by the OS Algo
 │               └── sjf_priority/
 │                   ├── css/
 │                   │   └── style.css
-│                   └── fxml/
-│                       └── MainView.fxml
+│                   ├── fxml/
+│                   │   └── MainView.fxml
+│                   └── images/
+│                       └── icon.png
 ├── .gitignore
 ├── build.gradle.kts
 ├── gradlew
@@ -85,7 +87,6 @@ The repository follows the strict separation of concerns required by the OS Algo
 ├── LICENSE
 ├── README.md
 └── settings.gradle.kts
-
 ```
 
 ---
