@@ -154,7 +154,7 @@ The system is structured around the required evaluation rubrics spanning accurat
 | Ali Samy          | [@AliSamy12](https://github.com/AliSamy12)                  | - Priority<br/>- Frontend   |
 | Nada Moustafa     | [@qNVDV](https://github.com/qNVDV)                          | - SJF<br/>- Frontend              |
 | Nourhan Mohamed   | [@Nour-FCAI](https://github.com/Nour-FCAI)                  | - SJF<br/>- Frontend              |
-| Nessreen Salah    | [@](https://github.com/)                                    | - SJF<br/>- Frontend              |
+| Nessreen Salah    | [@nesreensalh](https://github.com/nesreensalh)              | - SJF<br/>- Frontend              |
 
 ---
 
