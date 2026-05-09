@@ -34,6 +34,58 @@ The OS Scheduler Simulator is an interactive desktop application designed to eva
 
 The repository follows the strict separation of concerns required by the OS Algorithm Comparison guidelines
 ```
+├── .idea/
+│   ├── .name
+│   ├── gradle.xml
+│   ├── misc.xml
+│   ├── vcs.xml
+│   └── workspace.xml
+├── gradle/
+│   └── wrapper/
+│       ├── gradle-wrapper.jar
+│       └── gradle-wrapper.properties
+├── images/
+│   ├── comparison.png
+│   ├── gantt-chart.png
+│   ├── input-error.png
+│   ├── main-interface.png
+│   ├── negative-input.png
+│   ├── test-conflict.png
+│   ├── test-normal.png
+│   └── test-starvation.png
+├── src/
+│   └── main/
+│       ├── java/
+│       │   ├── com/
+│       │   │   └── sjf_priority/
+│       │   │       ├── contract/
+│       │   │       │   └── CpuScheduler.java
+│       │   │       ├── controllers/
+│       │   │       │   └── MainController.java
+│       │   │       ├── model/
+│       │   │       │   ├── ComparisonRow.java
+│       │   │       │   ├── ExecutionRecord.java
+│       │   │       │   └── Process.java
+│       │   │       ├── scheduler/
+│       │   │       │   ├── PriorityScheduling.java
+│       │   │       │   └── SJF.java
+│       │   │       └── Launcher.java
+│       │   └── module-info.java
+│       └── resources/
+│           └── com/
+│               └── sjf_priority/
+│                   ├── css/
+│                   │   └── style.css
+│                   └── fxml/
+│                       └── MainView.fxml
+├── .gitignore
+├── build.gradle.kts
+├── gradlew
+├── gradlew.bat
+├── LICENSE
+├── README.md
+└── settings.gradle.kts
+
 ```
 
 ---
