@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="800.0" prefWidth="1280.0" stylesheets="@../css/style.css"
+      xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.sjf_priority.controllers.MainController">
+
+    <HBox alignment="CENTER_LEFT" spacing="10" styleClass="title-bar">
+        <Label styleClass="title-text" text="OS Scheduler Engine Pro" />
+        <Region HBox.hgrow="ALWAYS" />
+        <Button mnemonicParsing="false" styleClass="window-btn, window-min-btn" text="&#x2014;" />
+        <Button mnemonicParsing="false" styleClass="window-btn, window-max-btn" text="&#x2610;" />
+        <Button mnemonicParsing="false" styleClass="window-btn, window-close-btn" text="&#x2715;" />
+    </HBox>
+
+    <HBox VBox.vgrow="ALWAYS">
+
+        <VBox fx:id="historyPanel" prefWidth="220.0" spacing="10.0" styleClass="history-panel">
+            <Label styleClass="panel-title" text="Run History" />
+            <ListView fx:id="historyListView" VBox.vgrow="ALWAYS" />
+            <Button onAction="#clearHistory" maxWidth="Infinity" styleClass="primary-btn"
+                    style="-fx-background-color: #3B82F6;" text="Clear History" />
+        </VBox>
+
+        <VBox spacing="10" style="-fx-padding: 10;" HBox.hgrow="ALWAYS">
+
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <Button fx:id="toggleHistoryBtn" styleClass="icon-btn" text="Menu" />
+                <Region HBox.hgrow="ALWAYS" />
+                <Button onAction="#clearAllTables" styleClass="primary-btn"
+                        style="-fx-background-color: #EF4444;" text="Clear All" />
+            </HBox>
+
+            <TabPane fx:id="mainTabPane" VBox.vgrow="ALWAYS" tabClosingPolicy="UNAVAILABLE">
+
+                <Tab text="Scheduler">
+                    <VBox spacing="10" style="-fx-padding:10;">
+
+                        <HBox spacing="10" alignment="CENTER_LEFT" styleClass="simulation-panel" style="-fx-padding: 10 20;">
+                            <Label styleClass="panel-title" text="Shared Workload Controls" />
+                            <Region HBox.hgrow="ALWAYS" />
+                            <TextField fx:id="manualArrivalInput" promptText="Arrival Time" prefWidth="100" styleClass="input-field"/>
+                            <TextField fx:id="manualBurstInput" promptText="Burst Time" prefWidth="100" styleClass="input-field"/>
+                            <TextField fx:id="manualPrioInput" promptText="Priority" prefWidth="100" styleClass="input-field"/>
+                            <Button onAction="#addManualProcess" styleClass="primary-btn" style="-fx-background-color: #8B5CF6;" text="Add Manual" />
+                            <Button onAction="#generateSharedRandom" styleClass="primary-btn" style="-fx-background-color: #3B82F6;" text="Add Random +5" />
+                        </HBox>
+
+                        <SplitPane dividerPositions="0.5" style="-fx-background-color: transparent;" VBox.vgrow="ALWAYS">
+
+                            <VBox spacing="10.0" styleClass="simulation-panel">
+                                <HBox alignment="CENTER_LEFT" spacing="10">
+                                    <Label styleClass="panel-title" text="Core 1: SJF (Preemptive)" />
+                                    <Region HBox.hgrow="ALWAYS" />
+                                    <Button onAction="#runSJF" styleClass="primary-btn"
+                                            style="-fx-background-color: #10B981;" text="Run SJF" />
+                                </HBox>
+                                <TableView fx:id="sjfTable" VBox.vgrow="ALWAYS">
+                                    <columns>
+                                        <TableColumn fx:id="sjfIdCol"      text="PID"    />
+                                        <TableColumn fx:id="sjfArrivalCol" text="Arrival"/>
+                                        <TableColumn fx:id="sjfBurstCol"   text="Burst"  />
+                                        <TableColumn fx:id="sjfWtCol"      text="WT"     />
+                                        <TableColumn fx:id="sjfRtCol"      text="RT"     />
+                                        <TableColumn fx:id="sjfTatCol"     text="TAT"    />
+                                    </columns>
+                                    <columnResizePolicy><TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/></columnResizePolicy>
+                                </TableView>
+                                <Label fx:id="sjfAvgLabel" styleClass="avg-label"
+                                       text="Averages: WT: - | RT: - | TAT: -" />
+                            </VBox>
+
+                            <VBox spacing="10.0" styleClass="simulation-panel">
+                                <HBox alignment="CENTER_LEFT" spacing="10">
+                                    <Label styleClass="panel-title" text="Core 2: Priority (Preemptive)" />
+                                    <Region HBox.hgrow="ALWAYS" />
+                                    <Button onAction="#runPriority" styleClass="primary-btn"
+                                            style="-fx-background-color: #10B981;" text="Run Priority" />
+                                </HBox>
+                                <TableView fx:id="priorityTable" VBox.vgrow="ALWAYS">
+                                    <columns>
+                                        <TableColumn fx:id="prioIdCol"      text="PID"    />
+                                        <TableColumn fx:id="prioArrivalCol" text="Arrival"  />
+                                        <TableColumn fx:id="prioBurstCol"   text="Burst"    />
+                                        <TableColumn fx:id="prioPrioCol"    text="Priority" />
+                                        <TableColumn fx:id="prioWtCol"      text="WT"       />
+                                        <TableColumn fx:id="prioRtCol"      text="RT"       />
+                                        <TableColumn fx:id="prioTatCol"     text="TAT"      />
+                                    </columns>
+                                    <columnResizePolicy><TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/></columnResizePolicy>
+                                </TableView>
+                                <Label fx:id="prioAvgLabel" styleClass="avg-label"
+                                       text="Averages: WT: - | RT: - | TAT: -" />
+                            </VBox>
+                        </SplitPane>
+                        <Button onAction="#runBothSync" maxWidth="Infinity" styleClass="primary-btn"
+                                style="-fx-font-size:15px; -fx-padding:10;" text="SYNC RUN BOTH CORES" />
+                    </VBox>
+                </Tab>
+
+                <Tab text="Gantt Charts">
+                    <VBox spacing="15" style="-fx-padding:15;">
+                        <Label styleClass="panel-title" text="SJF Gantt Chart" />
+                        <ScrollPane fx:id="sjfGanttScroll" fitToWidth="true" prefHeight="120"
+                                    styleClass="gantt-scroll">
+                            <Pane fx:id="sjfGanttPane" prefHeight="100" />
+                        </ScrollPane>
+                        <Label styleClass="panel-title" text="Priority Gantt Chart" />
+                        <ScrollPane fx:id="prioGanttScroll" fitToWidth="true" prefHeight="120"
+                                    styleClass="gantt-scroll">
+                            <Pane fx:id="prioGanttPane" prefHeight="100" />
+                        </ScrollPane>
+                        <Label fx:id="ganttHintLabel" style="-fx-text-fill:#64748B; -fx-font-size:13px;"
+                               text="Run the schedulers first to see Gantt charts." />
+                    </VBox>
+                </Tab>
+
+                <Tab text="Comparison">
+                    <VBox spacing="15" style="-fx-padding:15;">
+                        <HBox spacing="10" alignment="CENTER_LEFT">
+                            <Button onAction="#runComparison" styleClass="primary-btn"
+                                    style="-fx-background-color:#9333EA;" text="Run Same Workload on Both" />
+                            <Label style="-fx-text-fill:#64748B; -fx-font-size:13px;"
+                                   text="Uses SJF table as shared workload." />
+                        </HBox>
+                        <TableView fx:id="comparisonTable" VBox.vgrow="ALWAYS">
+                            <columns>
+                                <TableColumn fx:id="cmpPidCol"    text="PID"      />
+                                <TableColumn fx:id="cmpBurstCol"  text="Burst"    />
+                                <TableColumn fx:id="cmpPrioCol"   text="Priority" />
+                                <TableColumn fx:id="cmpSjfWtCol"  text="SJF-WT"   />
+                                <TableColumn fx:id="cmpSjfRtCol"  text="SJF-RT"   />
+                                <TableColumn fx:id="cmpSjfTatCol" text="SJF-TAT"  />
+                                <TableColumn fx:id="cmpPrWtCol"   text="PRIO-WT"  />
+                                <TableColumn fx:id="cmpPrRtCol"   text="PRIO-RT"  />
+                                <TableColumn fx:id="cmpPrTatCol"  text="PRIO-TAT" />
+                                <TableColumn fx:id="cmpWinnerCol" text="Winner"   />
+                            </columns>
+                            <columnResizePolicy><TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/></columnResizePolicy>
+                        </TableView>
+                        <VBox spacing="6" styleClass="simulation-panel">
+                            <Label fx:id="summaryLabel" styleClass="avg-label"
+                                   text="Run the comparison to see analysis." />
+                            <Label fx:id="verdictLabel"
+                                   style="-fx-text-fill:#34D399; -fx-font-size:14px; -fx-font-weight:bold;"
+                                   text="" />
+                        </VBox>
+                    </VBox>
+                </Tab>
+
+                <Tab text="Test Scenarios">
+                    <VBox spacing="15" style="-fx-padding:15;">
+                        <Label styleClass="panel-title" text="Predefined Test Scenarios" />
+                        <HBox spacing="10">
+                            <Button onAction="#loadTestNormal"    styleClass="primary-btn"
+                                    style="-fx-background-color:#3B82F6;" text="Normal Case" />
+                            <Button onAction="#loadTestConflict"  styleClass="primary-btn"
+                                    style="-fx-background-color:#F59E0B;" text="Conflict: Short vs High-Priority" />
+                            <Button onAction="#loadTestStarvation" styleClass="primary-btn"
+                                    style="-fx-background-color:#EF4444;" text="Starvation Case" />
+                        </HBox>
+                        <Label fx:id="testDescLabel" wrapText="true"
+                               style="-fx-text-fill:#94A3B8; -fx-font-size:13px; -fx-padding:10 0 0 0;"
+                               text="Select a test scenario to load it into both schedulers." />
+                    </VBox>
+                </Tab>
+
+            </TabPane>
+        </VBox>
+    </HBox>
+</VBox>
