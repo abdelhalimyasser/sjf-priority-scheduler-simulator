@@ -30,11 +30,17 @@ The OS Scheduler Simulator is an interactive desktop application designed to eva
 
 ---
 
+Direct Download Link:
+[Download sjf_priority.exe](https://raw.githubusercontent.com/abdelhalimyasser/sjf-priority-scheduler-simulator/main/sjf_priority.exe)
+
+---
+
 ## Project Structure
 
 The repository follows the strict separation of concerns required by the OS Algorithm Comparison guidelines
 ```
 ├── .idea/
+│   ├── .gitignore
 │   ├── .name
 │   ├── gradle.xml
 │   ├── misc.xml
@@ -69,6 +75,7 @@ The repository follows the strict separation of concerns required by the OS Algo
 │       │   │       ├── scheduler/
 │       │   │       │   ├── PriorityScheduling.java
 │       │   │       │   └── SJF.java
+│       │   │       ├── App.java
 │       │   │       └── Launcher.java
 │       │   └── module-info.java
 │       └── resources/
@@ -81,12 +88,15 @@ The repository follows the strict separation of concerns required by the OS Algo
 │                   └── images/
 │                       └── icon.png
 ├── .gitignore
+├── app_history.txt
 ├── build.gradle.kts
 ├── gradlew
 ├── gradlew.bat
 ├── LICENSE
 ├── README.md
-└── settings.gradle.kts
+├── settings.gradle.kts
+├── sjf_priority.exe
+└── src - Shortcut.lnk
 ```
 
 ---
@@ -192,8 +202,4 @@ src/gui/Main.java
   <br>
   <span>© 2026 <strong>OS Team</strong>. All Rights Reserved.</span>
   Released under the <a href="LICENSE"><code>LICENSE</code></a>.
-<<<<<<< HEAD
 </p>
-=======
-</p>
->>>>>>> a7315e91bd65aba9141279da63a07af177371016
