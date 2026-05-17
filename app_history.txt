@@ -1,0 +1,294 @@
+RUN|12:52:17|Added 5 Random Shared Rows
+SJF|1|2|9|2|0|-1|0
+SJF|2|1|3|4|0|-1|0
+SJF|3|3|4|4|0|-1|0
+SJF|4|2|4|5|0|-1|0
+SJF|5|4|3|3|0|-1|0
+PRIO|1|2|9|2|0|-1|0
+PRIO|2|1|3|4|0|-1|0
+PRIO|3|3|4|4|0|-1|0
+PRIO|4|2|4|5|0|-1|0
+PRIO|5|4|3|3|0|-1|0
+END_RUN
+RUN|12:52:32|SYNC Run #1
+SJF|1|2|9|2|0|-1|0
+SJF|2|1|3|4|0|-1|0
+SJF|3|3|4|4|0|-1|0
+SJF|4|2|4|5|0|-1|0
+SJF|5|4|3|3|0|-1|0
+PRIO|1|2|9|2|0|-1|0
+PRIO|2|1|3|4|0|-1|0
+PRIO|3|3|4|4|0|-1|0
+PRIO|4|2|4|5|0|-1|0
+PRIO|5|4|3|3|0|-1|0
+END_RUN
+RUN|12:52:32|Ran SJF
+SJF|1|2|9|2|0|-1|0
+SJF|2|1|3|4|0|-1|0
+SJF|3|3|4|4|0|-1|0
+SJF|4|2|4|5|0|-1|0
+SJF|5|4|3|3|0|-1|0
+PRIO|1|2|9|2|0|-1|0
+PRIO|2|1|3|4|0|-1|0
+PRIO|3|3|4|4|0|-1|0
+PRIO|4|2|4|5|0|-1|0
+PRIO|5|4|3|3|0|-1|0
+END_RUN
+RUN|12:52:32|Ran Priority
+SJF|1|2|9|2|0|-1|0
+SJF|2|1|3|4|0|-1|0
+SJF|3|3|4|4|0|-1|0
+SJF|4|2|4|5|0|-1|0
+SJF|5|4|3|3|0|-1|0
+PRIO|1|2|9|2|0|-1|0
+PRIO|2|1|3|4|0|-1|0
+PRIO|3|3|4|4|0|-1|0
+PRIO|4|2|4|5|0|-1|0
+PRIO|5|4|3|3|0|-1|0
+END_RUN
+RUN|12:53:14|Ran Comparison
+SJF|1|2|9|2|0|-1|0
+SJF|2|1|3|4|0|-1|0
+SJF|3|3|4|4|0|-1|0
+SJF|4|2|4|5|0|-1|0
+SJF|5|4|3|3|0|-1|0
+PRIO|1|2|9|2|0|-1|0
+PRIO|2|1|3|4|0|-1|0
+PRIO|3|3|4|4|0|-1|0
+PRIO|4|2|4|5|0|-1|0
+PRIO|5|4|3|3|0|-1|0
+END_RUN
+RUN|12:02:21|SYNC Run #1
+SJF|1|2|9|2|0|-1|0
+SJF|2|1|3|4|0|-1|0
+SJF|3|3|4|4|0|-1|0
+SJF|4|2|4|5|0|-1|0
+SJF|5|4|3|3|0|-1|0
+PRIO|1|2|9|2|0|-1|0
+PRIO|2|1|3|4|0|-1|0
+PRIO|3|3|4|4|0|-1|0
+PRIO|4|2|4|5|0|-1|0
+PRIO|5|4|3|3|0|-1|0
+END_RUN
+RUN|12:02:21|Ran Priority
+SJF|1|2|9|2|0|-1|0
+SJF|2|1|3|4|0|-1|0
+SJF|3|3|4|4|0|-1|0
+SJF|4|2|4|5|0|-1|0
+SJF|5|4|3|3|0|-1|0
+PRIO|1|2|9|2|0|-1|0
+PRIO|2|1|3|4|0|-1|0
+PRIO|3|3|4|4|0|-1|0
+PRIO|4|2|4|5|0|-1|0
+PRIO|5|4|3|3|0|-1|0
+END_RUN
+RUN|12:02:21|Ran SJF
+SJF|1|2|9|2|0|-1|0
+SJF|2|1|3|4|0|-1|0
+SJF|3|3|4|4|0|-1|0
+SJF|4|2|4|5|0|-1|0
+SJF|5|4|3|3|0|-1|0
+PRIO|1|2|9|2|0|-1|0
+PRIO|2|1|3|4|0|-1|0
+PRIO|3|3|4|4|0|-1|0
+PRIO|4|2|4|5|0|-1|0
+PRIO|5|4|3|3|0|-1|0
+END_RUN
+RUN|12:02:37|Loaded Test Scenario
+SJF|1|0|6|3|0|-1|0
+SJF|2|1|4|1|0|-1|0
+SJF|3|2|8|2|0|-1|0
+SJF|4|3|3|5|0|-1|0
+SJF|5|4|5|4|0|-1|0
+PRIO|1|0|6|3|0|-1|0
+PRIO|2|1|4|1|0|-1|0
+PRIO|3|2|8|2|0|-1|0
+PRIO|4|3|3|5|0|-1|0
+PRIO|5|4|5|4|0|-1|0
+END_RUN
+RUN|12:02:39|Loaded Test Scenario
+SJF|1|0|2|5|0|-1|0
+SJF|2|0|8|1|0|-1|0
+SJF|3|1|4|3|0|-1|0
+SJF|4|2|6|2|0|-1|0
+SJF|5|3|3|4|0|-1|0
+PRIO|1|0|2|5|0|-1|0
+PRIO|2|0|8|1|0|-1|0
+PRIO|3|1|4|3|0|-1|0
+PRIO|4|2|6|2|0|-1|0
+PRIO|5|3|3|4|0|-1|0
+END_RUN
+RUN|12:02:40|Loaded Test Scenario
+SJF|1|0|2|1|0|-1|0
+SJF|2|1|2|1|0|-1|0
+SJF|3|2|2|1|0|-1|0
+SJF|4|3|2|1|0|-1|0
+SJF|5|0|10|5|0|-1|0
+PRIO|1|0|2|1|0|-1|0
+PRIO|2|1|2|1|0|-1|0
+PRIO|3|2|2|1|0|-1|0
+PRIO|4|3|2|1|0|-1|0
+PRIO|5|0|10|5|0|-1|0
+END_RUN
+RUN|12:02:43|Loaded Test Scenario
+SJF|1|0|6|3|0|-1|0
+SJF|2|1|4|1|0|-1|0
+SJF|3|2|8|2|0|-1|0
+SJF|4|3|3|5|0|-1|0
+SJF|5|4|5|4|0|-1|0
+PRIO|1|0|6|3|0|-1|0
+PRIO|2|1|4|1|0|-1|0
+PRIO|3|2|8|2|0|-1|0
+PRIO|4|3|3|5|0|-1|0
+PRIO|5|4|5|4|0|-1|0
+END_RUN
+RUN|12:03:39|Loaded Test Scenario
+SJF|1|0|2|5|0|-1|0
+SJF|2|0|8|1|0|-1|0
+SJF|3|1|4|3|0|-1|0
+SJF|4|2|6|2|0|-1|0
+SJF|5|3|3|4|0|-1|0
+PRIO|1|0|2|5|0|-1|0
+PRIO|2|0|8|1|0|-1|0
+PRIO|3|1|4|3|0|-1|0
+PRIO|4|2|6|2|0|-1|0
+PRIO|5|3|3|4|0|-1|0
+END_RUN
+RUN|12:05:50|Loaded Test Scenario
+SJF|1|0|2|5|0|-1|0
+SJF|2|0|8|1|0|-1|0
+SJF|3|1|4|3|0|-1|0
+SJF|4|2|6|2|0|-1|0
+SJF|5|3|3|4|0|-1|0
+PRIO|1|0|2|5|0|-1|0
+PRIO|2|0|8|1|0|-1|0
+PRIO|3|1|4|3|0|-1|0
+PRIO|4|2|6|2|0|-1|0
+PRIO|5|3|3|4|0|-1|0
+END_RUN
+RUN|12:07:39|Loaded Test Scenario
+SJF|1|0|2|1|0|-1|0
+SJF|2|1|2|1|0|-1|0
+SJF|3|2|2|1|0|-1|0
+SJF|4|3|2|1|0|-1|0
+SJF|5|0|10|5|0|-1|0
+PRIO|1|0|2|1|0|-1|0
+PRIO|2|1|2|1|0|-1|0
+PRIO|3|2|2|1|0|-1|0
+PRIO|4|3|2|1|0|-1|0
+PRIO|5|0|10|5|0|-1|0
+END_RUN
+RUN|19:53:51|Ran Inline Test Scenario
+END_RUN
+RUN|19:54:00|Ran Inline Test Scenario
+END_RUN
+RUN|19:54:03|Ran Inline Test Scenario
+END_RUN
+RUN|20:06:07|Ran Full Inline Test Scenario
+END_RUN
+RUN|20:06:24|Cleared all tables
+END_RUN
+RUN|20:06:26|Cleared all tables
+END_RUN
+RUN|20:06:26|Cleared all tables
+END_RUN
+RUN|20:06:26|Cleared all tables
+END_RUN
+RUN|20:06:27|Cleared all tables
+END_RUN
+RUN|20:06:27|Cleared all tables
+END_RUN
+RUN|20:06:27|Cleared all tables
+END_RUN
+RUN|20:06:27|Cleared all tables
+END_RUN
+RUN|20:15:14|Added 5 Random Shared Rows
+SJF|1|3|1|3|0|-1|0
+SJF|2|4|9|5|0|-1|0
+SJF|3|1|7|2|0|-1|0
+SJF|4|4|7|2|0|-1|0
+SJF|5|3|1|1|0|-1|0
+PRIO|1|3|1|3|0|-1|0
+PRIO|2|4|9|5|0|-1|0
+PRIO|3|1|7|2|0|-1|0
+PRIO|4|4|7|2|0|-1|0
+PRIO|5|3|1|1|0|-1|0
+END_RUN
+RUN|20:15:16|SYNC Run #1
+SJF|1|3|1|3|0|-1|0
+SJF|2|4|9|5|0|-1|0
+SJF|3|1|7|2|0|-1|0
+SJF|4|4|7|2|0|-1|0
+SJF|5|3|1|1|0|-1|0
+PRIO|1|3|1|3|0|-1|0
+PRIO|2|4|9|5|0|-1|0
+PRIO|3|1|7|2|0|-1|0
+PRIO|4|4|7|2|0|-1|0
+PRIO|5|3|1|1|0|-1|0
+END_RUN
+RUN|20:15:16|Ran Priority
+SJF|1|3|1|3|0|-1|0
+SJF|2|4|9|5|0|-1|0
+SJF|3|1|7|2|0|-1|0
+SJF|4|4|7|2|0|-1|0
+SJF|5|3|1|1|0|-1|0
+PRIO|1|3|1|3|0|-1|0
+PRIO|2|4|9|5|0|-1|0
+PRIO|3|1|7|2|0|-1|0
+PRIO|4|4|7|2|0|-1|0
+PRIO|5|3|1|1|0|-1|0
+END_RUN
+RUN|20:15:16|Ran SJF
+SJF|1|3|1|3|0|-1|0
+SJF|2|4|9|5|0|-1|0
+SJF|3|1|7|2|0|-1|0
+SJF|4|4|7|2|0|-1|0
+SJF|5|3|1|1|0|-1|0
+PRIO|1|3|1|3|0|-1|0
+PRIO|2|4|9|5|0|-1|0
+PRIO|3|1|7|2|0|-1|0
+PRIO|4|4|7|2|0|-1|0
+PRIO|5|3|1|1|0|-1|0
+END_RUN
+RUN|20:15:24|Ran Full Inline Test Scenario
+SJF|1|3|1|3|0|-1|0
+SJF|2|4|9|5|0|-1|0
+SJF|3|1|7|2|0|-1|0
+SJF|4|4|7|2|0|-1|0
+SJF|5|3|1|1|0|-1|0
+PRIO|1|3|1|3|0|-1|0
+PRIO|2|4|9|5|0|-1|0
+PRIO|3|1|7|2|0|-1|0
+PRIO|4|4|7|2|0|-1|0
+PRIO|5|3|1|1|0|-1|0
+END_RUN
+RUN|20:18:12|Ran Full Inline Test Scenario
+END_RUN
+RUN|20:18:42|Ran Full Inline Test Scenario
+SJF|1|3|1|3|0|-1|0
+SJF|2|4|9|5|0|-1|0
+SJF|3|1|7|2|0|-1|0
+SJF|4|4|7|2|0|-1|0
+SJF|5|3|1|1|0|-1|0
+PRIO|1|3|1|3|0|-1|0
+PRIO|2|4|9|5|0|-1|0
+PRIO|3|1|7|2|0|-1|0
+PRIO|4|4|7|2|0|-1|0
+PRIO|5|3|1|1|0|-1|0
+END_RUN
+RUN|20:21:00|Ran Full Inline Test Scenario
+END_RUN
+RUN|20:21:57|Ran Full Inline Test Scenario
+END_RUN
+RUN|20:22:02|Ran Full Inline Test Scenario
+END_RUN
+RUN|20:22:03|Cleared all tables
+END_RUN
+RUN|20:22:04|Ran Full Inline Test Scenario
+END_RUN
+RUN|20:22:06|Ran Full Inline Test Scenario
+END_RUN
+RUN|20:22:10|Ran Full Inline Test Scenario
+END_RUN
+RUN|20:22:38|Ran Full Inline Test Scenario
+END_RUN
