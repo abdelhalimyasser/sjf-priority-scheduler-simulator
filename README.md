@@ -192,4 +192,8 @@ src/gui/Main.java
   <br>
   <span>© 2026 <strong>OS Team</strong>. All Rights Reserved.</span>
   Released under the <a href="LICENSE"><code>LICENSE</code></a>.
+<<<<<<< HEAD
 </p>
+=======
+</p>
+>>>>>>> a7315e91bd65aba9141279da63a07af177371016

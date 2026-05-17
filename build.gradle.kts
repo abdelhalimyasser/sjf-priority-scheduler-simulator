@@ -51,6 +51,7 @@ jlink {
         name = "app"
     }
 }
+<<<<<<< HEAD
 
 tasks.withType<Jar> {
     manifest {
@@ -63,3 +64,5 @@ tasks.withType<Jar> {
         configurations.runtimeClasspath.get().filter { it.name.endsWith("jar") }.map { zipTree(it) }
     })
 }
+=======
+>>>>>>> a7315e91bd65aba9141279da63a07af177371016

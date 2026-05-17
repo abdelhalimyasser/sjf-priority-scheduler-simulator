@@ -2,7 +2,11 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<<<<<<< HEAD
 <VBox prefHeight="950.0" prefWidth="1650.0" stylesheets="@../css/style.css"
+=======
+<VBox prefHeight="800.0" prefWidth="1280.0" stylesheets="@../css/style.css"
+>>>>>>> a7315e91bd65aba9141279da63a07af177371016
       xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="com.sjf_priority.controllers.MainController">
 
@@ -102,12 +106,20 @@
                 <Tab text="Gantt Charts">
                     <VBox spacing="15" style="-fx-padding:15;">
                         <Label styleClass="panel-title" text="SJF Gantt Chart" />
+<<<<<<< HEAD
                         <ScrollPane fx:id="sjfGanttScroll"  prefHeight="120"
+=======
+                        <ScrollPane fx:id="sjfGanttScroll" fitToWidth="true" prefHeight="120"
+>>>>>>> a7315e91bd65aba9141279da63a07af177371016
                                     styleClass="gantt-scroll">
                             <Pane fx:id="sjfGanttPane" prefHeight="100" />
                         </ScrollPane>
                         <Label styleClass="panel-title" text="Priority Gantt Chart" />
+<<<<<<< HEAD
                         <ScrollPane fx:id="prioGanttScroll"  prefHeight="120"
+=======
+                        <ScrollPane fx:id="prioGanttScroll" fitToWidth="true" prefHeight="120"
+>>>>>>> a7315e91bd65aba9141279da63a07af177371016
                                     styleClass="gantt-scroll">
                             <Pane fx:id="prioGanttPane" prefHeight="100" />
                         </ScrollPane>
@@ -150,6 +162,7 @@
                 </Tab>
 
                 <Tab text="Test Scenarios">
+<<<<<<< HEAD
                     <VBox spacing="15" style="-fx-padding:15;" VBox.vgrow="ALWAYS">
                         <Label styleClass="panel-title" text="Predefined Test Scenarios" />
                         <HBox spacing="10">
@@ -213,6 +226,21 @@
                                 <Label fx:id="testPrioAvgLabel" styleClass="avg-label" text="Averages: WT: - | RT: - | TAT: -" />
                             </VBox>
                         </SplitPane>
+=======
+                    <VBox spacing="15" style="-fx-padding:15;">
+                        <Label styleClass="panel-title" text="Predefined Test Scenarios" />
+                        <HBox spacing="10">
+                            <Button onAction="#loadTestNormal"    styleClass="primary-btn"
+                                    style="-fx-background-color:#3B82F6;" text="Normal Case" />
+                            <Button onAction="#loadTestConflict"  styleClass="primary-btn"
+                                    style="-fx-background-color:#F59E0B;" text="Conflict: Short vs High-Priority" />
+                            <Button onAction="#loadTestStarvation" styleClass="primary-btn"
+                                    style="-fx-background-color:#EF4444;" text="Starvation Case" />
+                        </HBox>
+                        <Label fx:id="testDescLabel" wrapText="true"
+                               style="-fx-text-fill:#94A3B8; -fx-font-size:13px; -fx-padding:10 0 0 0;"
+                               text="Select a test scenario to load it into both schedulers." />
+>>>>>>> a7315e91bd65aba9141279da63a07af177371016
                     </VBox>
                 </Tab>
 

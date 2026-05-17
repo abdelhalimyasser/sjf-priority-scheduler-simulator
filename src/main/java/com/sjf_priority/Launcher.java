@@ -52,4 +52,8 @@ public class Launcher extends Application {
     public static void main(String[] args) {
         launch(args);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> a7315e91bd65aba9141279da63a07af177371016
